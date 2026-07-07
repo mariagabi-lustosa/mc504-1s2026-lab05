@@ -63,6 +63,7 @@ obj-$(CONFIG_MODULES) += module/
 obj-y += memcpy.o
 obj-y += secret.o
 obj-y += good_day.o
+obj-y += status.o
 
 obj-$(CONFIG_KCMP) += kcmp.o
 obj-$(CONFIG_FREEZER) += freezer.o

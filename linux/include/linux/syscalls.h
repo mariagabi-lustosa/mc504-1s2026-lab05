@@ -1227,6 +1227,8 @@ asmlinkage long sys_memcpy(unsigned long __user *src, unsigned long __user *dst,
 asmlinkage long sys_get_secret(void);
 asmlinkage long sys_set_secret(int val);
 asmlinkage long sys_good_day(void);
+asmlinkage long sys_get_status(void);
+asmlinkage long sys_set_status(int new_status);
 /*
  * Not a real system call, but a placeholder for syscalls which are
  * not implemented -- see kernel/sys_ni.c

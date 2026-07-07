@@ -875,8 +875,14 @@ __SYSCALL(__NR_set_secret, sys_set_secret)
 #define __NR_good_day 475
 __SYSCALL(__NR_good_day, sys_good_day)
 
+#define __NR_get_status 476
+__SYSCALL(__NR_get_status, sys_get_status)
+
+#define __NR_set_status 477
+__SYSCALL(__NR_set_status, sys_set_status)
+
 #undef __NR_syscalls
-#define __NR_syscalls 476
+#define __NR_syscalls 478
 
 /*
  * 32 bit systems traditionally used different

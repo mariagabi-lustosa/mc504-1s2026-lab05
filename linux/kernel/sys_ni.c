@@ -269,6 +269,8 @@ COND_SYSCALL(pkey_free);
 
 /* memfd_secret */
 COND_SYSCALL(memfd_secret);
+COND_SYSCALL(memfd_status);
+COND_SYSCALL(memfd_good_day);
 
 /*
  * Architecture specific weak syscall entries.
@@ -391,7 +393,8 @@ COND_SYSCALL(memcpy);
 COND_SYSCALL(get_secret);
 COND_SYSCALL(set_secret);
 COND_SYSCALL(good_day)
-
+COND_SYSCALL(get_status);
+COND_SYSCALL(set_status);
 /* restartable sequence */
 COND_SYSCALL(rseq);
 COND_SYSCALL(rseq_slice_yield);
