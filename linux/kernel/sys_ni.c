@@ -390,6 +390,7 @@ COND_SYSCALL(setuid16);
 COND_SYSCALL(memcpy);
 COND_SYSCALL(get_secret);
 COND_SYSCALL(set_secret);
+COND_SYSCALL(good_day)
 
 /* restartable sequence */
 COND_SYSCALL(rseq);
