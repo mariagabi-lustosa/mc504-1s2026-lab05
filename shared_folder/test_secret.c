@@ -11,12 +11,18 @@ int main()
     int val = 10;
 
     ret = syscall(__NR_set_secret, val);
-    if (ret == -1)
-        printf("error on set_secret: %d\n", errno);
+    if (ret == -1) {
+    	printf("error on set_secret: %d\n", errno);
+    } else {
+    	printf("val set to %d\n", val);
+    }
 
     ret = syscall(__NR_get_secret);
-    if (ret != val)
+    if (ret != val) {
         printf("error, expected %d but got %d\n", val, ret);
+    } else {
+    	printf("val is %d\n", val);
+    }
 
     return 0;
 }
